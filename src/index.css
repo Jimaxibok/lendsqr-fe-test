@@ -1,13 +1,183 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo {
+  
+  display: flex;
+  /* justify-content: space-around; */
 }
+
+#logo-img {
+position: absolute;
+width: 24.75px;
+height: 25px;
+left: 97px;
+top: 107.67px;
+
+}
+
+#company-name{
+position: absolute;
+width: 138.44px;
+height: 36px;
+left: 132.33px;
+top: 106px;
+
+/* background: #213F7D; */
+}
+
+#display-image {
+position: absolute;
+width: 600px;
+height: 337.57px;
+left: 67px;
+top: 281px;
+}
+
+.loginForm {
+  /* position: absolute; */
+  /* width: 704px; */
+  /* height: 900px; */
+  /* left: 736px; */
+  /* top: -5px; */
+  background: #FFFFFF;
+  /* box-shadow: 0px 15px 90px rgba(0, 0, 0, 0.03); */
+    padding-left:30px;
+
+
+}
+
+.welcome h1 {
+position: absolute;
+width: 183px;
+height: 55px;
+/* left: 836px; */
+top: 215px;
+font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 55px;
+letter-spacing: -0.04em;
+
+color: #213F7D;
+
+}
+
+.welcome p {
+position: absolute;
+width: 194px;
+height: 28px;
+/* left: 836px; */
+top: 280px;
+
+font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+color: #545F7D;
+}
+
+.emailInput {
+box-sizing: border-box;
+
+position: absolute;
+width: 447px;
+height: 50px;
+/* left: 836px; */
+top: 368px;
+
+background: #FFFFFF;
+border: 2px solid rgba(84, 95, 125, 0.15);
+border-radius: 5px;
+
+}
+
+.passwordInput{
+box-sizing: border-box;
+
+position: absolute;
+width: 447px;
+height: 50px;
+/* left: 836px; */
+top: 442px;
+
+background: #FFFFFF;
+border: 2px solid rgba(84, 95, 125, 0.15);
+border-radius: 5px;
+}
+.emailInput:hover{
+  cursor: pointer;
+}
+
+.passwordInput:hover{
+  cursor: pointer;
+  
+}
+input:focus{
+  outline: none !important;
+  border: 2px solid rgb(36, 86, 133);
+  box-shadow:0 0 10px #719ECE ;
+}
+
+#show-password{
+position: absolute;
+width: 49.41px;
+height: 12.5px;
+left: 395px;
+top: 460px;
+
+font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+color: #39CDCC;
+cursor: pointer;;
+
+}
+
+.forgotPasswordLink{
+position: absolute;
+width: 147px;
+height: 17px;
+/* left: 836px; */
+top: 516px;
+
+font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height */
+
+text-align: right;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+color: #39CDCC;
+}
+
+.submit {
+position: absolute;
+width: 447px;
+height: 50px;
+/* left: 58.06%; */
+/* right: 10.9%; */
+top: 550px;
+bottom: 32.11%;
+
+background: #39CDCC;
+border-radius: 8px;
+}
+/* 
+ms-input-placeholder:hover{
+  border-bottom: 1px solid blue;
+} */
