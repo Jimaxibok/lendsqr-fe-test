@@ -1,18 +1,20 @@
 import { Layout } from 'antd'
-import lendsqr from "../assets/png/lendsqr.png"
-import Union from "../assets/png/Union.png"
+import lendsqrLogo from '../assets/images/lendsqrLogo.svg'
 import { Input, Space } from 'antd'
 import { AudioOutlined } from '@ant-design/icons'
 import { Typography } from 'antd'
 import { UserOutlined } from '@ant-design/icons'
 import { Avatar } from 'antd'
-import { Menu } from 'antd';
-
-const { Search } = Input;
-
+import { Menu } from 'antd'
+import UserWithLoan from '../assets/images/UserWithLoan.png'
+import Saving from '../assets/images/Saving.png'
+import Users from '../assets/images/Users.png'
+import ActiveUsers from '../assets/images/ActiveUsers.png'
+import { BiBell } from 'react-icons/bi'
+import {IoMdArrowDropdown} from 'react-icons/io'
 
 const { Header, Footer, Sider, Content } = Layout;
-
+const { Search } = Input
 const Navbar = () => {
     const onSearch = (value) => console.log(value);
     const { Title } = Typography
@@ -28,12 +30,17 @@ const Navbar = () => {
     return (
         <>
      <Layout>
-     <Header  style={{background:'white', padding:20}}>
+     <Header  style={{background:'white',  height: 120  }}>
+
+     <div className> 
      <Avatar  style={{background:'gray', float: 'right'}} icon={<UserOutlined />} />
-     <div>
-     {/* <Title level={4}>  <img src={Union} alt="union" width='40' />  </Title> */}
-     <Title level={4}> <img src={lendsqr} alt="" /> </Title>
-     </div>
+     <img src={lendsqrLogo} alt=""  />
+       <Search placeholder="input search text" onSearch={onSearch} enterButton />
+        <BiBell />
+      <p>Docs</p>
+        
+      </div>
+     
      
      </Header>
      <Layout>
@@ -53,7 +60,34 @@ const Navbar = () => {
       </Sider>
 
       <Layout>  
-        <Content>Content hhhhh
+        <Content className='content'>
+
+            <h2 className='userHeader'>User</h2>
+        <div className="card">
+            <div className='cardChild'>
+             <img src={Users} className='userIcon' />  
+             <h4 className='cardHead'>USERS</h4>
+             <p className='cardFigure'> 2,453</p>
+            </div>
+
+            <div className='cardChild'>
+            <img src={ActiveUsers} alt="" className='activeUserIcon' />
+             <h4 className='cardHead'>ACTIVE USERS</h4>
+             <p className='cardFigure'> 2,453</p>
+            </div>
+
+            <div className='cardChild'>
+            <img src={UserWithLoan} alt="" className='userWithloanIcon' />
+             <h4 className='cardHead'>USERS WITH LOANS</h4>
+             <p className='cardFigure'> 12,453</p>
+             </div>
+             
+            <div className='cardChild'>
+            <img src={Saving} alt="" className='savingIcon' />
+             <h4 className='cardHead'>USERS WITH SAVINGS</h4>
+             <p className='cardFigure'>102,453</p>
+            </div>
+       </div>
             
         </Content>
         <Footer>Footer</Footer>
@@ -61,6 +95,26 @@ const Navbar = () => {
 
      </Layout>
     </Layout>
+
+    <div className='NavbarTwo' >
+        <div className="navLogo">
+        <img src={lendsqrLogo} alt="Logo"  />
+        </div>
+
+         <div className="navSearch">
+            {/* <input type="text" className='searchInput' placeholder='Search for anything' onChange={onchange}/> */}
+            <Search placeholder="Search for anything" onSearch={onSearch} enterButton className='searchInput'  />
+         </div>
+
+         <div className="navAvatar">
+             <p className='docs'>Docs</p> 
+             <BiBell  className='bibell'/>
+             <br />
+             <Avatar icon={<UserOutlined />}  className='avatar'/>
+            <span>Akinyode</span>
+            <IoMdArrowDropdown  className='navbarArrow'/>
+         </div>
+     </div>
         </>
     )
 }

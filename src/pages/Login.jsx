@@ -1,8 +1,8 @@
 import { useState } from "react";
 import {Link, useNavigate } from 'react-router-dom'
-import pabloSignIn from "../assets/jpg/pabloSignIn.jpg";
-import lendsqr from "../assets/png/lendsqr.png";
-import Union from "../assets/png/Union.png";
+import pabloSignIn from "../assets/images/pabloSignIn.jpg";
+import lendsqrLogo from "../assets/images/lendsqrLogo.svg";
+
 
 
 import { Row, Col } from "antd";
@@ -19,8 +19,8 @@ const Login = () => {
   return (
     <Row >
       <Col className="container" xs={0} lg={12}>
-        <img src={Union} alt="logo-img" id="logo-img" />
-        <img src={lendsqr} alt="company-name" id="company-name" />
+     
+        <img src={lendsqrLogo} alt="company-name" id="company-name" />
 
         <div className="display-image">
           <img src={pabloSignIn} alt="display-image" id="display-image" />
