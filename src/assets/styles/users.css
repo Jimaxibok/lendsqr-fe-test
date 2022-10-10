@@ -26,3 +26,23 @@ span {
 .ant-select-arrow .anticon:not(.ant-select-suffix) {
   pointer-events: none;
 }
+
+.ant-table.ant-table-middle .ant-table-footer,
+.ant-table.ant-table-middle .ant-table-tbody > tr > td,
+.ant-table.ant-table-middle .ant-table-thead > tr > th,
+.ant-table.ant-table-middle .ant-table-title,
+.ant-table.ant-table-middle tfoot > tr > td,
+.ant-table.ant-table-middle tfoot > tr > th {
+  color: #545f7d;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #ffffff;
+}
+
+.ant-table table {
+  padding: 0.5rem 1.5rem;
+}
+
+.ant-table-thead > tr > th {
+  border-bottom: none;
+}

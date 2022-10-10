@@ -34,7 +34,7 @@ const DashboardLayout = (props) => {
           </div>
         </Header>
         <Layout>
-          <Sider className='dashboard-sidebar' width={280}>
+          <Sider className='dashboard-sidebar' width={260}>
             <div>
               <div className='sidebar-menu'>
                 <img src={breifcaseIcon} alt='organization' />
