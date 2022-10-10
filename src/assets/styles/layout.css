@@ -58,3 +58,188 @@
   background: rgb(241, 255, 255);
   border-left: 4px solid #39cdcc;
 }
+.summaryCardHeader h1 {
+  font-family: 'Work Sans';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+color: #213F7D;
+}
+
+.summaryCards{
+  margin-bottom: 2rem;
+}
+
+.userCards{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.cards{
+  /* border: 1px solid red; */
+  width: 220px;
+  height: 155px;
+  background: #FFFFFF;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  padding: 20px;
+}
+.SummaryCardImg1{
+  border-radius:50%;
+  width:40px;
+  height: 40px;
+  background: #f0dcf3;
+  padding:8px;
+  
+}
+
+.SummaryCardImg2{
+  border-radius:50%;
+  width:40px;
+  height: 40px;
+  background: #e8e2f8;
+  padding:8px;
+
+}
+
+.SummaryCardImg3{
+  border-radius:50%;
+  width:40px;
+  height: 40px;
+  background: #fcdad4;
+  padding:10px;
+}
+.SummaryCardImg4{
+  border-radius:50%;
+  width:40px;
+  height: 40px;
+  background: #f8cad6;
+  padding:10px;
+
+}
+.summaryCardName{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  color: #4e5875;
+  width: 153px;
+  height: 16px;
+  margin-top: 20px;
+
+}
+.usersNum{
+font-family: 'Work Sans';
+font-weight: 550;
+font-size: 24px;
+line-height: 28px;
+color: #213F7D;
+
+}
+
+
+.avatarbell {
+  display:flex;
+  align-items: center;
+  /* justify-content: space-between; */
+ 
+}
+.avatarbellItem1{
+  margin-right: 60px;
+  padding-top: 15px;
+  text-decoration-line: underline;
+  color: #213F7D;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+
+}
+.avatarbellItem2{
+  margin-right: 30px;
+}
+.avatarbellItem3{
+  margin-right: 20px;
+}
+.avatarbellItem4{
+  margin-left:10px;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #213F7D;
+
+}
+
+.searchInput{
+  display: flex;
+  margin-top: 10px;
+  background: #FFFFFF;
+  
+  
+}
+
+.searchinputbar{
+  height: 40px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  border: 1px solid #cadbdb ;
+  outline:none;
+
+}
+.btn{
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  background: #39CDCC;
+  
+}
+.fasearch{
+  position: absolute;
+  top: 15px;
+  left: 14px;
+
+}
+
+/* screen-xl */
+@media (max-width: 1200px) {
+  .userCards{
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    gap:10px;
+  }
+}
+
+/* screen-lg */
+@media (max-width: 992px) {
+  .userCards{
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+  }
+}
+
+/* screen-md */
+@media (max-width: 768px) {
+ 
+}
+
+/* screen-sm */
+@media (max-width: 576px) {
+  
+  }
+
+
+
+
+
+
+
+
+
+
+/* style={{height: '10rem', width: '100%', border: '1px solid red', marginBottom: '2rem'}} */

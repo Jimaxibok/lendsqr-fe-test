@@ -1,10 +1,15 @@
 import { Layout } from 'antd';
+import { Avatar } from 'antd';
+import { UserOutlined } from '@ant-design/icons';
 import { Row, Col } from 'antd';
 import { Link } from 'react-router-dom';
 import breifcaseIcon from '../../assets/images/briefcase-icon.svg';
 import usersIcon from '../../assets/images/users-icon.svg';
 import lendsqrLogo from '../../assets/images/lends-logo.svg';
 import { DownOutlined } from '@ant-design/icons';
+import  {RiArrowDropDownFill} from 'react-icons/ri';
+import bell from '../../assets/images/bell.svg'
+import { FaSearch} from 'react-icons/fa';
 const { Header, Sider } = Layout;
 
 const DashboardLayout = (props) => {
@@ -22,11 +27,21 @@ const DashboardLayout = (props) => {
               <Col xs={18} lg={18}>
                 <div className='d-flex justify-content-between align-items-center'>
                   <div>
-                    <h2>TEXTFIELD</h2>
+                    <div className="searchInput">
+                      <input type="text" className='searchinputbar' placeholder='Search for anything' />
+                      <div className="btn btn-common"> 
+                        <FaSearch style={{color:'white' }}  className='fasearch'/>
+                      </div>
+                    </div>
                   </div>
 
-                  <div>
-                    <h2>OTHER ITEMS</h2>
+                  <div className='avatarbell'>
+                    <p className='avatarbellItem1'>Docs</p>
+                    <img src={bell} alt="bell" className='avatarbellItem2'/>
+                    <Avatar size="large"  icon={<UserOutlined />} className='avatarbellItem3'/>
+                    <span className='avatarbellItem4'>Akinyode</span>
+                    <RiArrowDropDownFill  className='avatarbellItem5' />
+
                   </div>
                 </div>
               </Col>
