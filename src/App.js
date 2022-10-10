@@ -4,6 +4,7 @@ import Login from './pages/Login';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'antd/dist/antd.min.css';
 import DashboardLayout from './components/layouts/DashboardLayout';
+import UserDetails from './components/UserDetails'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path='/users' element={<Users />} />
             <Route path='/user' element={<User />} />
           </Route>
+          <Route path='/userDetails' element={<UserDetails />} />
         </Routes>
       </Router>
     </>
