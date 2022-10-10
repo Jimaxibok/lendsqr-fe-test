@@ -1,0 +1,30 @@
+.ant-table-tbody > tr > td {
+  border: none;
+}
+
+span {
+  color: #545f7d;
+  font-size: 12px;
+}
+
+.ant-table-thead > tr > th {
+  border: none;
+  background-color: #ffffff;
+}
+
+.ant-table-thead > tr {
+  padding: 0.4rem;
+}
+
+.ant-table-thead
+  > tr
+  > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+  width: 0;
+  height: 0;
+}
+
+.ant-select-arrow .anticon:not(.ant-select-suffix) {
+  pointer-events: none;
+}
+
+
