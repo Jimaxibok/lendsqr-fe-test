@@ -3,6 +3,7 @@ import {useState, useEffect} from 'react'
 import {CgArrowLongLeft} from 'react-icons/cg'
 // import userAvatar from '.././assets/images/userAvatar.svg'
 import userStar from '.././assets/images/userStar.svg'
+import coloredstar from '.././assets/images/coloredstar.svg'
 import {useParams} from 'react-router-dom'
 import axios from 'axios'
 import { formatAmount } from '../helpers';
@@ -11,6 +12,8 @@ import { formatNumber } from '../helpers';
 
 const User = () => {
 const [userData, setUserData] = useState({})
+const [loading, setLoading] = useState (true)
+
 
 const  params = useParams()
 console.log(params)
@@ -19,8 +22,9 @@ console.log(params)
     const fetchUserData = async () => {
       try {
         const{ data } = await axios.get(`https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/${params.id}`)
-        console.log(data);
+        // console.log(data);
         setUserData(data)
+        setLoading(false)
       } catch (error) {
         console.log(error);
       }
@@ -47,7 +51,9 @@ console.log(params)
   const { facebook, instagram, twitter} = socials || {}
 
   // const  {} = guarantor || {}
-
+  if(loading){
+    return 'Loading...'
+  }
 
  
   return <>
@@ -65,7 +71,7 @@ console.log(params)
             </div>
           </div>
         </div>
-
+       
         <div id='generalDetails'>
           <div className="userDetails">
               <div id='useravatarcon'>
@@ -82,7 +88,7 @@ console.log(params)
             <div id='userStars'>
                 <p>User's Tier</p>
                 <div id='starImg'>
-                <img src={userStar} alt="" />
+                <img src={coloredstar} alt="" />
                 <img src={userStar} alt="" />
                 <img src={userStar} alt="" />
                 </div>
@@ -213,7 +219,7 @@ console.log(params)
                </div>
           </div>
 
-          <div id="guaranter">
+          <div id="guarantor">
             <p className="guarantorHeader">Guarantor</p>
             <div id='guarantorForm'>
                <div>
@@ -238,9 +244,9 @@ console.log(params)
           </div>
 
 
-          <div id="guaranter">
+          <div id="guarantor2">
             <p className="guarantorHeader">Guarantor</p>
-            <div id='guarantorForm'>
+            <div id='guarantorForm2'>
             <div>
                  <h4>FULL NAME</h4>
                  <p>{guarantor?.firstName} {guarantor?.lastName}</p>
@@ -262,6 +268,7 @@ console.log(params)
                </div>
           </div>
         </section>
+
 
   </>
 };

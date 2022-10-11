@@ -7,14 +7,14 @@
     display: flex;
    text-align: center;
    
+   
 }
 .backToUsersCon #backarrow{
     color: #545F7D;
     margin-top: 4px;
     margin-right: 10px;
     line-height: 10px;
-    
-  
+    cursor: pointer;
 }
 .backToUsersCon #backToUsers{
     font-family: 'Work Sans';
@@ -22,7 +22,7 @@
     font-weight: 500;
     font-size: 15px;
     color: #545F7D;
-
+    cursor: pointer;
 }
 
 .userStatus{
@@ -40,7 +40,7 @@
  #blacklistButton{
     font-style: normal;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 10px;
     line-height: 16px;
     text-align: center;
     letter-spacing: 0.1em;
@@ -50,11 +50,12 @@
     color: #E4033B;
     height: 35px;
     background:#ffffff ;
+    cursor: pointer;
  }
  #activateButton{
     font-style: normal;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 10px;
     line-height: 16px;
     text-align: center;
     letter-spacing: 0.1em;
@@ -63,6 +64,7 @@
     color: #39CDCC;
     height: 35px;
     background:#ffffff ;
+    cursor: pointer;
  }
 
  #generalDetails{
@@ -129,7 +131,21 @@
      display: flex;
      justify-content: space-between;
      margin-top: 2.5rem;
+     padding-bottom:25px;
+     
  }
+ .userDetailsList li{
+   cursor: pointer;
+   
+ }
+ .userDetailsList li:nth-child(1){
+      color: #39CDCC;
+      border-bottom:2px solid #39CDCC;
+ }
+   .userDetailsList li:active:nth-child(1){
+      border-bottom:2px solid #39CDCC;
+      color:#39CDCC;
+   }
 
  #useravatarcon{
      display: flex;
@@ -328,6 +344,27 @@
     line-height: 19px;
     color: #545F7D;
   }
+  #guarantor2{
+     padding-bottom: 5rem;
+    
+  }
+  #guarantorForm2{
+   /* display: flex; */
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 10px;
+   justify-content: space-between;
+   margin: 0px 30px 0px 30px;
+  
+}
+#guarantorForm2 p {
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 19px;
+   color: #545F7D;
+ }
+  
 
   @media (max-width: 1200px) {
     
