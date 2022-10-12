@@ -10,7 +10,7 @@ const Login = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    navigate('/user');
+    navigate('/users');
   };
 
   return (

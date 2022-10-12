@@ -16,7 +16,7 @@ const [loading, setLoading] = useState (true)
 
 
 const  params = useParams()
-console.log(params)
+// console.log(params)
 
   useEffect(() => {
     const fetchUserData = async () => {
@@ -55,8 +55,7 @@ console.log(params)
     return 'Loading...'
   }
 
- 
-  return <>
+  return <> 
         <div id='userContainer'>
           <div className="backToUsersCon">
             <CgArrowLongLeft id='backarrow'/>

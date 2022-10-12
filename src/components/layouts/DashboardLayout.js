@@ -56,7 +56,7 @@ const DashboardLayout = (props) => {
                 <span>Switch Organization</span>
                 <DownOutlined style={{ fontSize: '14px' }} />
               </div>
-              <h2>OTHERS ITEMS</h2>
+              <h2>OTHER</h2>
               <div className='sidebar-menu menu-active'>
                 <Link to='/users'>
                   <img src={usersIcon} alt='users' />

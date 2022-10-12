@@ -10,18 +10,21 @@
   height: 6rem !important;
   background-color: #ffffff !important;
   box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04) !important;
+  position: fixed;
+  width: 100%;
   
 }
 
 .dashboard-sidebar {
   background: #ffffff !important;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04) !important;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   overflow: auto !important;
   min-height: 100vh !important;
   /* min-height: auto !important; */
   scrollbar-width: none;
   position: fixed !important;
+  margin-top: 6rem;
 }
 
 .dashboard-header {
@@ -62,6 +65,10 @@
   background: rgb(241, 255, 255);
   border-left: 4px solid #39cdcc;
 }
+.summaryCards{
+margin-top: 6rem;
+}
+
 .summaryCardHeader h1 {
   font-family: 'Work Sans';
   font-weight: 500;
@@ -222,8 +229,8 @@ color: #213F7D;
 /* screen-lg */
 @media (max-width: 992px) {
   .userCards{
-    display: grid;
-    grid-template-columns:repeat(2,1fr) ;
+    display: flex;
+    flex-wrap: wrap;
   }
   .searchInput{
     display: none;

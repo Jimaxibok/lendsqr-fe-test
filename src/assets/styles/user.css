@@ -1,9 +1,11 @@
+#userContainer{
+   margin-top: 6rem;
+}
 
 .backToUsersCon{
-    display: flex;
+   display: flex;
    text-align: center;
-   
-   
+  
 }
 .backToUsersCon #backarrow{
     color: #545F7D;
