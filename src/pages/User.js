@@ -2,7 +2,6 @@ import React from 'react';
 import {useState, useEffect} from 'react'
 import { useNavigate } from 'react-router-dom';
 import {CgArrowLongLeft} from 'react-icons/cg'
-// import userAvatar from '.././assets/images/userAvatar.svg'
 import userStar from '.././assets/images/userStar.svg'
 import coloredstar from '.././assets/images/coloredstar.svg'
 import {useParams} from 'react-router-dom'

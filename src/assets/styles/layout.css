@@ -216,7 +216,35 @@ color: #213F7D;
   left: 14px;
 
 }
-
+.sidebar-customers{
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #545F7D;
+  padding: 0.6rem 1.5rem;
+  margin-bottom: -3rem;
+  padding-top: 3rem;
+  
+}
+.sidebarDashboard{
+  padding: 0.6rem 1.5rem;
+  font-size: 16px;
+  line-height: 19px;
+  color: #213F7D;
+  padding-top:3rem;
+}
+.sidebarDashboard span{
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+  color: #213F7D;
+  margin: 0 0.3rem 0 0.5rem;
+  
+}
 /* screen-xl */
 @media (max-width: 1200px) {
   .userCards{

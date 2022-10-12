@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import breifcaseIcon from '../../assets/images/briefcase-icon.svg';
 import usersIcon from '../../assets/images/users-icon.svg';
 import lendsqrLogo from '../../assets/images/lends-logo.svg';
+import home from '../../assets/images/home 1.svg';
 import { DownOutlined } from '@ant-design/icons';
 import  {RiArrowDropDownFill} from 'react-icons/ri';
 import bell from '../../assets/images/bell.svg'
@@ -56,7 +57,11 @@ const DashboardLayout = (props) => {
                 <span>Switch Organization</span>
                 <DownOutlined style={{ fontSize: '14px' }} />
               </div>
-              <h2>OTHER</h2>
+              <div className='sidebarDashboard'>
+                <img src={home} alt="home" />
+                <span>Dashboard</span>
+              </div>
+              <p className='sidebar-customers'>CUSTOMERS</p>
               <div className='sidebar-menu menu-active'>
                 <Link to='/users'>
                   <img src={usersIcon} alt='users' />
