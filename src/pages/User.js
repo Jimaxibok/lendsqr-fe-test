@@ -129,7 +129,7 @@ console.log(params)
 
                <div>
                  <h4>EMAIL ADDRESS</h4>
-                 <p>{email}</p>
+                 <p id='personalEmail'>{email}</p>
                </div>
 
                <div>
@@ -184,7 +184,7 @@ console.log(params)
 
                 <div>
                   <h4>OFFICE EMAIL</h4>
-                  <p>{officeEmail}</p>
+                  <p id='personalEmail'>{officeEmail}</p>
                 </div>
 
                 <div>

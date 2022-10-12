@@ -1,8 +1,4 @@
 
-#userContainer{
-    width: 1037px;
-}
-
 .backToUsersCon{
     display: flex;
    text-align: center;
@@ -72,9 +68,9 @@
     border: 1px solid rgba(33, 63, 125, 0.06);
     box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
     border-radius: 4px;
-    height: 190px;
+    height: auto;
     padding: 0px 30px 0 30px;
-    width: 1037px;
+    
  }
 
  .userDetails{
@@ -83,6 +79,7 @@
     justify-content: space-between;
     margin-top: 30px;
     align-items: center;
+    padding-bottom: 10px;
     
 }
  #userAvatar{
@@ -100,7 +97,7 @@
  } 
 
  #username-userid h2{
-     font-family: Arial, Helvetica, sans-serif;
+   font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
@@ -110,7 +107,7 @@
 
  }
  #username-userid span{
-     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -131,7 +128,7 @@
      display: flex;
      justify-content: space-between;
      margin-top: 2.5rem;
-     padding-bottom:25px;
+     padding-bottom:5px;
      
  }
  .userDetailsList li{
@@ -150,7 +147,7 @@
  #useravatarcon{
      display: flex;
      align-items:center;
-     /* border-right: 0.5px solid gray; */
+     
  }
  
  #userStars{
@@ -195,8 +192,7 @@
 
  #detailsContainer{
     box-sizing: border-box;
-    width: 1037px;
-    height: 910px;
+    height: auto;
     background: #FFFFFF;
     border: 1px solid rgba(33, 63, 125, 0.06);
     box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
@@ -206,10 +202,9 @@
  }
   
   #personalInformation{
-        /* display: flex; */
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        gap: 10px;
+        gap: 15px;
         justify-content: space-between;
  }
 
@@ -242,7 +237,6 @@
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
     color: #545F7D;
 
  }
@@ -256,7 +250,6 @@
   }
 
   #employmentEducation{
-       /* display: flex; */
        display: grid;
        grid-template-columns: repeat(4, 1fr);
        gap: 10px;
@@ -349,7 +342,6 @@
     
   }
   #guarantorForm2{
-   /* display: flex; */
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    gap: 10px;
@@ -365,6 +357,10 @@
    color: #545F7D;
  }
   
+ #personalEmail{
+    font-size: 15px !important; 
+   
+ }
 
   @media (max-width: 1200px) {
     
@@ -372,16 +368,133 @@
   
   /* screen-lg */
   @media (max-width: 992px) {
-   
+   #personalInformation{
+     display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      justify-content: space-between;
+}
+#employmentEducation{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 10px;
+   justify-content: space-between;
+   margin: 0px 30px 0px 30px;
+   border-bottom: 0.5px solid rgb(229, 224, 224);
+}
+#socialMedia{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 10px;
+   justify-content: space-between;
+   margin: 0px 30px 0px 30px;
+   border-bottom: 0.5px solid rgb(229, 224, 224);
+}
+#guarantorForm2{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 10px;
+   justify-content: space-between;
+   margin: 0px 30px 0px 30px;
+  
+}
+#guarantorForm{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 10px;
+   justify-content: space-between;
+   margin: 0px 30px 0px 30px;
+  
+}
+.userDetailsList{
+   display:none ;
+}
+
   }
   
   /* screen-md */
   @media (max-width: 768px) {
+   #personalInformation{
+      display: flex;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 15px;
+      justify-content: space-between;
+}
+#employmentEducation{
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   gap: 10px;
+   justify-content: space-between;
+   margin: 0px 30px 0px 30px;
+   border-bottom: 0.5px solid rgb(229, 224, 224);
+}
+#socialMedia{
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   gap: 10px;
+   justify-content: space-between;
+   margin: 0px 30px 0px 30px;
+   border-bottom: 0.5px solid rgb(229, 224, 224);
+}
+#guarantorForm2{
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   gap: 10px;
+   justify-content: space-between;
+   margin: 0px 30px 0px 30px;
+  
+}
+#guarantorForm{
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   gap: 10px;
+   justify-content: space-between;
+   margin: 0px 30px 0px 30px;
+  
+}
    
   }
   
   /* screen-sm */
   @media (max-width: 576px) {
-    
-    }
+   #personalInformation{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+}
+#personalEmail{
+   font-size: 11px !important; 
+  
+}
+#employmentEducation{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: 0px 30px 0px 30px;
+   border-bottom: 0.5px solid rgb(229, 224, 224);
+}
+#socialMedia{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: 0px 30px 0px 30px;
+   border-bottom: 0.5px solid rgb(229, 224, 224);
+}
+#guarantorForm2{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: 0px 30px 0px 30px;
+  
+}
+#guarantorForm{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: 0px 30px 0px 30px;
+   border-bottom: 0.5px solid rgb(229, 224, 224);
+  
+}
+}
   
