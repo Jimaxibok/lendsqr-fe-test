@@ -1,5 +1,6 @@
 import React from 'react';
 import {useState, useEffect} from 'react'
+import { useNavigate } from 'react-router-dom';
 import {CgArrowLongLeft} from 'react-icons/cg'
 // import userAvatar from '.././assets/images/userAvatar.svg'
 import userStar from '.././assets/images/userStar.svg'
@@ -14,7 +15,7 @@ const User = () => {
 const [userData, setUserData] = useState({})
 const [loading, setLoading] = useState (true)
 
-
+const navigate = useNavigate()
 const  params = useParams()
 // console.log(params)
 
@@ -50,16 +51,17 @@ const  params = useParams()
 
   const { facebook, instagram, twitter} = socials || {}
 
-  // const  {} = guarantor || {}
   if(loading){
     return 'Loading...'
   }
-
+    const onClick = () => {
+      navigate('/users');
+    }
   return <> 
         <div id='userContainer'>
           <div className="backToUsersCon">
-            <CgArrowLongLeft id='backarrow'/>
-            <p id='backToUsers'>Back to Users</p>
+            <CgArrowLongLeft id='backarrow' onClick={onClick}/>
+            <p id='backToUsers' onClick={onClick}>Back to Users</p>
           </div>
 
           <div className="userStatus">
