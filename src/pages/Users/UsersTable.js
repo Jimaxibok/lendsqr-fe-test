@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { formatDate } from '../../helpers';
 import { MoreOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
+import UserDetails from '../../components/UserDetails'
 
 const UsersTable = () => {
   const [usersData, setUsersData] = useState([]);
@@ -41,7 +42,7 @@ const UsersTable = () => {
       title: (
         <span>
           {' '}
-          ORGANIZATION &nbsp; <img src={filterIcon} alt='' />{' '}
+         <UserDetails/> &nbsp; <img src={filterIcon} alt='' />{' '}
         </span>
       ),
       dataIndex: 'orgName',

@@ -46,3 +46,82 @@ span {
 .ant-table-thead > tr > th {
   border-bottom: none;
 }
+
+#modal-button{
+  border: none !important;
+  z-index: 0;
+  background: #ffffff;
+  font-weight: 500;
+  
+}
+
+.modalStyle{
+ max-width: 40%;
+ border-radius: 20px !important;
+}
+
+.organization-label{
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #545F7D;
+  }
+  .organization-input{
+    background: #FFFFFF;
+    opacity: 0.2;
+    border: 1px solid #213F7D;
+    border-radius: 8px;
+    width: 190px;
+    height: 40px;
+    
+  }
+  
+  .modal-div{
+    border-radius: 2px ;
+    
+  }
+  .modalStyle .ant-modal-content{
+    background:#ffffff;
+    border-radius: 10px;
+    max-width:50%;
+    margin-left: -6rem;
+    margin-top: 6rem;
+  }
+  .modalStyle{
+   
+  }
+  .organization{
+    margin-top: 15px;
+  }
+  .resFilBnt{
+    margin-top: 15px;
+    max-width: 100%;
+  }
+
+  #filter-btn{
+    margin-left: 20px !important;
+    width: 40%;
+    height:30px ;
+    border-radius: 5px;
+    background: #39CDCC;
+    border: 1px solid #39CDCC;
+    border-radius: 8px;
+    color: #ffffff;
+  }
+  #reset-btn{
+    width: 40%;
+    height:30px ;
+    border-radius: 5px;
+    background: #ffffff;
+    border: 1px solid #545F7D;
+    border-radius: 8px;
+    color: #c2bebe;
+  }
+ #filter-btn:hover{
+    border: 2px solid rgb(108, 108, 223);
+  }
+  #reset-btn:hover {
+    border: 2px solid rgb(108, 108, 223);
+  }

@@ -11,9 +11,19 @@ import { DownOutlined } from '@ant-design/icons';
 import  {RiArrowDropDownFill} from 'react-icons/ri';
 import bell from '../../assets/images/bell.svg'
 import { FaSearch} from 'react-icons/fa';
+import {useState} from 'react'
 const { Header, Sider } = Layout;
 
 const DashboardLayout = (props) => {
+
+  const [text, setText] = useState('')
+
+  const handleChange = (e) => {
+      e.preventDefault()
+      setText(e.target.value)
+     
+}
+
   return (
     <>
       <Layout className='dashboard-layout'>
@@ -29,7 +39,7 @@ const DashboardLayout = (props) => {
                 <div className='d-flex justify-content-between align-items-center'>
                   <div>
                     <div className="searchInput">
-                      <input type="text" className='searchinputbar' placeholder='Search for anything' />
+                      <input type="text" className='searchinputbar' placeholder='Search for anything' value={text} onChange={handleChange} />
                       <div className="btn btn-common"> 
                         <FaSearch style={{color:'white' }}  className='fasearch'/>
                       </div>

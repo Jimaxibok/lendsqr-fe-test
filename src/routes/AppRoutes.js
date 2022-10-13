@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'antd/dist/antd.min.css';
 import DashboardLayout from '../components/layouts/DashboardLayout';
 
+
 const AppRoutes = () => {
   const authRoutes = [
     {

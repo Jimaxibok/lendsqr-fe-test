@@ -4,6 +4,7 @@ import ActiveUser from '../../assets/images/activeUsers.svg';
 import savings from '../../assets/images/savings.svg';
 import UserwithLoan from '../../assets/images/loanUsers.svg';
 
+
 const SummaryCards = () => {
   return <div className='summaryCards'>
     <header className='summaryCardHeader'>

@@ -412,6 +412,24 @@
    display:none ;
 }
 
+.userDetails{
+   display:inline-block;
+}
+#userStars{
+  
+       border:none;
+       margin-top: 1rem;
+       margin-left:6.3rem;
+       width:0;
+
+}
+.userAccount-bankDetails{
+       border:none;
+       margin-top: 1rem;
+       margin-left:6.4rem;
+       width:0;
+}
+
   }
   
   /* screen-md */
