@@ -1,6 +1,6 @@
 # lendsqr-fe-test
 
-This project was  with [Create React App](https://github.com/Jimaxibok/lendsqr-fe-test).
+This project was built with [Create React App](https://github.com/Jimaxibok/lendsqr-fe-test).
 
 ## Available Scripts
 
