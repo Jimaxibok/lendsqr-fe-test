@@ -22,7 +22,6 @@
   padding: 1.5rem 0;
   overflow: auto !important;
   min-height: 100vh !important;
-  /* min-height: auto !important; */
   scrollbar-width: none;
   position: fixed !important;
   margin-top: 6rem;
@@ -154,7 +153,9 @@ color: #213F7D;
 .avatarbell {
   display:flex;
   align-items: center;
-  /* justify-content: space-between; */
+  /* width: 50%; */
+  padding-left:20px;
+  margin-right: -60px;
  
 }
 .avatarbellItem1{
@@ -190,8 +191,7 @@ color: #213F7D;
   display: flex;
   margin-top: 10px;
   background: #FFFFFF;
-  
-  
+
 }
 
 .searchinputbar{
@@ -200,12 +200,13 @@ color: #213F7D;
   border-top-left-radius: 8px;
   border: 1px solid #cadbdb ;
   outline:none;
+  width: 400%;
 
 }
 .btn{
   position: relative;
   height: 40px;
-  width: 40px;
+  width: 200px;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
   background: #39CDCC;
@@ -262,6 +263,9 @@ color: #213F7D;
     flex-wrap: wrap;
   }
   .searchInput{
+    display: none;
+  }
+  .avatarbellItem1{
     display: none;
   }
 }
