@@ -8,21 +8,19 @@ import usersIcon from '../../assets/images/users-icon.svg';
 import lendsqrLogo from '../../assets/images/lends-logo.svg';
 import home from '../../assets/images/home 1.svg';
 import { DownOutlined } from '@ant-design/icons';
-import  {RiArrowDropDownFill} from 'react-icons/ri';
-import bell from '../../assets/images/bell.svg'
-import { FaSearch} from 'react-icons/fa';
-import {useState} from 'react'
+import { RiArrowDropDownFill } from 'react-icons/ri';
+import bell from '../../assets/images/bell.svg';
+import { FaSearch } from 'react-icons/fa';
+import { useState } from 'react';
 const { Header, Sider } = Layout;
 
 const DashboardLayout = (props) => {
-
-  const [text, setText] = useState('')
+  const [text, setText] = useState('');
 
   const handleChange = (e) => {
-      e.preventDefault()
-      setText(e.target.value)
-     
-}
+    e.preventDefault();
+    setText(e.target.value);
+  };
 
   return (
     <>
@@ -38,21 +36,26 @@ const DashboardLayout = (props) => {
               <Col xs={18} lg={18}>
                 <div className='d-flex justify-content-between align-items-center'>
                   <div>
-                    <div className="searchInput">
-                      <input type="text" className='searchinputbar' placeholder='Search for anything' value={text} onChange={handleChange} />
-                      <div className="btn btn-common"> 
-                        <FaSearch style={{color:'white' }}  className='fasearch'/>
+                    <div className='searchInput'>
+                      <input
+                        type='text'
+                        className='searchinputbar'
+                        placeholder='Search for anything'
+                        value={text}
+                        onChange={handleChange}
+                      />
+                      <div className='btn btn-common'>
+                        <FaSearch style={{ color: 'white' }} className='fasearch' />
                       </div>
                     </div>
                   </div>
 
                   <div className='avatarbell'>
                     <p className='avatarbellItem1'>Docs</p>
-                    <img src={bell} alt="bell" className='avatarbellItem2'/>
-                    <Avatar size="large"  icon={<UserOutlined />} className='avatarbellItem3'/>
+                    <img src={bell} alt='bell' className='avatarbellItem2' />
+                    <Avatar size='large' icon={<UserOutlined />} className='avatarbellItem3' />
                     <span className='avatarbellItem4'>Akinyode</span>
-                    <RiArrowDropDownFill  className='avatarbellItem5' />
-
+                    <RiArrowDropDownFill className='avatarbellItem5' />
                   </div>
                 </div>
               </Col>
@@ -68,7 +71,7 @@ const DashboardLayout = (props) => {
                 <DownOutlined style={{ fontSize: '14px' }} />
               </div>
               <div className='sidebarDashboard'>
-                <img src={home} alt="home" />
+                <img src={home} alt='home' />
                 <span>Dashboard</span>
               </div>
               <p className='sidebar-customers'>CUSTOMERS</p>

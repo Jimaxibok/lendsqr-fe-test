@@ -15,13 +15,13 @@ const [userData, setUserData] = useState({})
 const [loading, setLoading] = useState (true)
 
 const navigate = useNavigate()
-const  params = useParams()
+const  {id} = useParams()
 // console.log(params)
 
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const{ data } = await axios.get(`https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/${params.id}`)
+        const{ data } = await axios.get(`https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/${id}`)
         // console.log(data);
         setUserData(data)
         setLoading(false)
@@ -106,7 +106,7 @@ const  params = useParams()
           <li>General Details</li>
           <li>Documents</li>
           <li>Bank Details</li>
-          <li>Loans</li>
+          <li>Loans</li> 
           <li>Savings</li>
           <li>App and System</li>
           </div>
